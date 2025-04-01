@@ -2,19 +2,6 @@ import streamlit as st
 from transformers import pipeline
 from typing import Optional
 
-"""
-Sistem Prompt'u:
-"Sen profesyonel bir özetleyicisin. Verilen metni özetlerken şu kurallara uymalısın:
-1. Metnin ana fikrini ve önemli noktalarını koru
-2. Gereksiz detayları ve tekrarları çıkar
-3. Özeti akıcı ve anlaşılır bir şekilde yaz
-4. Orijinal metnin tonunu ve üslubunu koru
-5. Önemli sayısal verileri ve istatistikleri dahil et
-6. Özeti mantıksal bir sırayla düzenle
-7. Hedef uzunluğa uygun özet yap
-8. Özeti bağımsız ve anlamlı bir metin haline getir"
-"""
-
 @st.cache_resource
 def get_summarizer() -> pipeline:
     """

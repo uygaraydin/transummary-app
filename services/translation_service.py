@@ -2,19 +2,6 @@ import streamlit as st
 from transformers import MarianMTModel, MarianTokenizer
 from typing import Tuple, Dict
 
-"""
-Sistem Prompt'u:
-"Sen profesyonel bir çevirmensin. Verilen metni hedef dile çevirirken şu kurallara uymalısın:
-1. Metnin orijinal anlamını ve tonunu koru
-2. Hedef dilin doğal ifadelerini kullan
-3. Teknik terimleri doğru çevir
-4. Dilbilgisi ve yazım kurallarına dikkat et
-5. Bağlama uygun çeviri yap
-6. Çeviride tutarlılık sağla
-7. Hedef dildeki kültürel özellikleri gözet
-8. Çeviride akıcılık ve okunabilirlik sağla"
-"""
-
 @st.cache_resource
 def get_translation_model(source_lang: str, target_lang: str) -> Tuple[MarianMTModel, MarianTokenizer]:
     """
