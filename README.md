@@ -18,7 +18,6 @@ Bu proje, metinleri farklı dillere çevirmenize ve özetlemenize olanak sağlay
 - PyTorch (Derin öğrenme framework'ü)
 - BART-large-CNN (Özetleme modeli)
 - Helsinki-NLP OPUS-MT (Çeviri modelleri)
-- Prompt Engineering (Model performans optimizasyonu)
 
 ## 🤖 Kullanılan AI Modelleri
 
